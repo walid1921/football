@@ -1,4 +1,4 @@
-public abstract class Person { // abstract because you never create a Person directly — only Coach or Player.
+public abstract class Person {
 
     protected String name;
     protected int age;
