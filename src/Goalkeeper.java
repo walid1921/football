@@ -5,7 +5,7 @@ public class Goalkeeper extends Player {
     private int reaction;
 
     public Goalkeeper(String name, int age, int strength, int shotPower, int motivation, int reaction) {
-        super(name, age, strength, shotPower, motivation);
+        super(name, age, strength, shotPower, motivation, 0);
         this.reaction = validate(reaction);
     }
 

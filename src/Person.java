@@ -8,6 +8,10 @@ public abstract class Person {
         this.age = age;
     }
 
+    public String getName() {
+        return name;
+    }
+
     protected int validate(int value) { // keep result inside 1..10
         if (value < 1) return 1;
         if (value > 10) return 10;

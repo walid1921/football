@@ -7,12 +7,12 @@ public class Player extends Person {
     protected int motivation;
     protected int goals;
 
-    public Player(String name, int age, int strength, int shotPower, int motivation) {
+    public Player(String name, int age, int strength, int shotPower, int motivation, int goals) {
         super(name, age);
         this.strength = validate(strength);
         this.shotPower = validate(shotPower);
         this.motivation = validate(motivation);
-        this.goals = 0;
+        this.goals = goals;
     }
 
     public int shootAtGoal() {
@@ -27,6 +27,18 @@ public class Player extends Person {
 
     public int getGoals() {
         return goals;
+    }
+
+    public int getMotivation() {
+        return motivation;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
